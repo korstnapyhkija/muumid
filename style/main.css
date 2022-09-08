@@ -1,0 +1,313 @@
+/*Reset*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*END RESET*/
+/*Typo*/
+@import url('https://fonts.googleapis.com/css?family=MuseoModerno:400');
+
+html {font-size: 100%;} /*16px*/
+
+body {
+  background: white;
+  font-family: 'MuseoModerno', cursive;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'MuseoModerno', cursive;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.BigTxt{
+  font-size: 5.61rem;
+}
+h1 {
+  margin-top: 0;
+  font-size: 4.209rem;
+}
+
+h2 {font-size: 3.157rem; color: white;}
+
+h3 {font-size: 2.369rem;}
+
+h4 {font-size: 1.777rem;}
+
+h5 {font-size: 1.333rem;}
+
+small, .text_small {font-size: 0.75rem;}
+/*END TYPO*/
+/*Global*/
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.btn {
+  padding: 1em 2em;
+  border-radius: 30px;
+  margin: 1em;
+}
+.btn-primary {
+  background-color: #576853;
+  color: white;
+  border: 3px solid #576853;
+}
+.btn-primary:hover {
+  background-color: #475444;
+  border: 3px solid #475444;
+}
+.btn-secondary {
+  border: 3px solid white;
+  color: white;
+}
+.btn-secondary:hover{
+  background-color: white;
+  color: black;
+}
+/*END GLOBAL STYLES*/
+/*Hero*/
+.hero{
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1093%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(218%2c 223%2c 216%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c279 C 57.6%2c245.6 172.8%2c122.6 288%2c112 C 403.2%2c101.4 460.8%2c227.6 576%2c226 C 691.2%2c224.4 748.8%2c95.4 864%2c104 C 979.2%2c112.6 1036.8%2c278.8 1152%2c269 C 1267.2%2c259.2 1382.4%2c97.8 1440%2c55L1440 560L0 560z' fill='rgba(134%2c 149%2c 130%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c469 C 144%2c453 432%2c391 720%2c389 C 1008%2c387 1296%2c445 1440%2c459L1440 560L0 560z' fill='rgba(52%2c 65%2c 48%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1093'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-attachment: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
+background-attachment: fixed;
+background-size: cover;
+height: 100vh;
+}
+.logo img {
+  height: 70px;
+  border-radius: 100%;
+}
+header {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+nav ul {
+  display: flex;
+}
+nav a {
+  margin-left: 1em;
+  color: black;
+}
+.hero-slogan {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  filter:drop-shadow(2px 2px 2px black);
+}
+
+.hero-slogan h1 {
+  font-size: 8em;
+  margin-bottom: -22px;
+  font-weight: 600;
+
+}
+
+.hero-slogan p {
+  font-size: 3em;
+
+}
+/*END HERO STYLES*/
+
+/* Intro scetion */
+.intro {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(0,0,0,0.527), rgba(0,0,0,0.5)), url(https://assets.moomin.com/uploads/2020/06/Moominvalley_Background_Valley_Bridge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4em 0;
+  height: 800px;
+  color: white;
+}
+
+.svg-circle img {
+  height: 10em;
+}
+
+.intro-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-btn {
+  padding: 3em;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.intro-copy h2 {
+  margin-top: 0;
+}
+/* END INTRO SECTION STYLES*/
+/* services */
+  .services {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 4em 0;
+  }
+  .services-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .services-box{
+    max-width: 420px;
+  }
+  .services-copy {
+    margin-bottom: 6em
+  }
+  .services-copy a{
+    margin: 2em 0;
+  }
+  .services-copy p{
+    margin-bottom: 2em 0;
+  }
+  .services-info{
+    width: 50%;
+    margin-left: 7em;
+  }
+  .services-pic{
+    position: absolute;
+    left: 40px;
+    top: 20px;
+  }
+  .services-box a{
+    color: #576853;
+  }
+  .services-box hr{
+    height: 3px;
+    background-color: #576853;
+    border: none;
+    width: 20px;
+    margin: 0;
+    transition: 0.2s;
+  }
+  #details:hover ~ #services-hr{
+    width: 100px;
+  }
+/*end services style*/
+
+
+/* client styles */
+.clients{
+  width: 1440px;
+  margin: 0 auto;
+}
+.clients-copy{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients-logo{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 450px;
+  grid-row-gap: 100px;
+  }
+
+.clients-logos img{
+  height: 10em;
+}
+/*end client styles */
