@@ -78,6 +78,9 @@ select {
 /*Typo*/
 @import url('https://fonts.googleapis.com/css?family=MuseoModerno:400');
 
+html, body{
+  overflow-x: hidden;
+}
 html {font-size: 100%;} /*16px*/
 
 body {
@@ -157,7 +160,7 @@ background-size: cover;
 height: 100vh;
 }
 .logo img {
-  height: 70px;
+  height: 100px;
   border-radius: 100%;
 }
 header {
@@ -261,6 +264,7 @@ nav a {
   }
   .services-copy p{
     margin-bottom: 2em 0;
+    text-align: justify;
   }
   .services-info{
     width: 50%;
@@ -273,6 +277,9 @@ nav a {
   }
   .services-box a{
     color: #576853;
+  }
+  .services-box{
+    text-align: justify;
   }
   .services-box hr{
     height: 3px;
@@ -311,3 +318,77 @@ nav a {
   height: 10em;
 }
 /*end client styles */
+/* responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /*fonts*/
+
+.hero-slogan h1{
+  font-size: 3em;
+  inline-size: 300px;
+  overflow-wrap: break-word;
+}
+.hero-slogan p{
+  font-size: 2em;
+  padding-top: 2em;
+}
+
+  /*end fonts*/
+  header{
+    width: auto;
+  }
+  .services{
+    flex-direction: column;
+  }
+  .services-info {
+    margin: 10px;
+  }
+  .services-pic{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+  }
+  .services-pic img{
+    width: 10em;
+  }
+  .services-grid{
+    grid-template-columns: repeat(1,1fr);
+    padding-left: 1em;
+  }
+  .services-copy h2{
+    color: black;
+  }
+  .services-copy{
+
+  }
+  .intro{
+    height: 100%;
+    padding: 2em 0.5em;
+  }
+
+  .intro-btn {
+    display: flex;
+  }
+  .clients{
+    width: auto;
+  }
+  .clients-copy{
+    flex-direction: column;
+    padding: 0.5em;
+    align-items: flex-start;
+  }
+  .clients-logo{
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+  }
+  .clients-logo img{
+    width: 5em;
+  }
+}
+
+/* end responsive */
